@@ -1,0 +1,20 @@
+{
+  "name": "bus-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i src/input.css -o dist/output.css --watch",
+    "prod": "npx tailwindcss -o dist/build.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "tailwind-not-last-child": "^2.0.1"
+  }
+}

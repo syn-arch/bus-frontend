@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Buana Utama Sakti</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <style>
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+    </style>
+</head>
+
+<body>
+    <navbar
+        class="bg-white fixed w-full flex justify-center items-center lg:flex-row flex-col border-b-4 border-secondary z-10">
+        <div class="container flex justify-between px-5 w-full">
+            <div class="h-full flex items-center py-7">
+                <a href="/src/index.html"><img src="/src/logo.png" alt="" class="w-52"></a>
+            </div>
+            <ul class="hidden lg:flex">
+                <li><a class="px-5 py-7 hover:text-secondary text-gray-700 w-full h-full block"
+                        href="/src/index.html">Beranda</a>
+                </li>
+                <li class="group relative">
+                    <button class="group-hover:text-secondary text-gray-700 flex items-center px-5 py-7 text-nowrap">
+                        Tentang
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="opacity-0 bg-white invisible border-t-4 border-secondary transition group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
+                        <div class="shadow p-5 pb-10 flex justify-center">
+                            <div class="container grid grid-cols-3 py-5">
+                                <div>
+                                    <span class="text-lg font-bold block text-gray-800">Tentang</span>
+                                    <ul class="*:my-4 *:border-t last:border-b *:py-3">
+                                        <li><a href="" class="block text-gray-700">Visi dan Misi</a></li>
+                                        <li><a href="" class="block text-gray-700">Profil Perusahan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="group relative">
+                    <button class="group-hover:text-secondary text-gray-700 flex items-center px-5 py-7 text-nowrap">
+                        Services
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="opacity-0 invisible border-t-4 border-secondary bg-white transition group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
+                        <div class="shadow p-5 pb-10 flex justify-center">
+                            <div class="container grid grid-cols-3 py-5">
+                                <div>
+                                    <span class="text-lg font-bold block text-gray-800">Services</span>
+                                    <ul class="*:my-4 *:border-t last:border-b *:py-3">
+                                        <li><a href="" class="block text-gray-700">Visi dan Misi</a></li>
+                                        <li><a href="" class="block text-gray-700">Profil Perusahan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="group relative">
+                    <button class="group-hover:text-secondary text-gray-700 flex items-center px-5 py-7 text-nowrap">
+                        Portfolio
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="opacity-0 invisible border-t-4 border-secondary bg-white transition group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
+                        <div class="shadow p-5 pb-10 flex justify-center">
+                            <div class="container grid grid-cols-3 py-5">
+                                <div>
+                                    <span class="text-lg font-bold block text-gray-800">Portfolio</span>
+                                    <ul class="*:my-4 *:border-t last:border-b *:py-3">
+                                        <li><a href="" class="block text-gray-700">Visi dan Misi</a></li>
+                                        <li><a href="" class="block text-gray-700">Profil Perusahan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="group relative">
+                    <button class="group-hover:text-secondary text-gray-700 flex items-center px-5 py-7 text-nowrap">
+                        Produk
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4"></path>
+                        </svg>
+                    </button>
+                    <div
+                        class="opacity-0 invisible border-t-4 border-secondary bg-white transition group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
+                        <div class="shadow p-5 pb-10 flex justify-center">
+                            <div class="container grid grid-cols-3 py-5">
+                                <div>
+                                    <span class="text-lg font-bold block text-gray-800">Produk</span>
+                                    <ul class="*:my-4 *:border-t last:border-b *:py-3">
+                                        <li><a href="" class="block text-gray-700">Visi dan Misi</a></li>
+                                        <li><a href="" class="block text-gray-700">Profil Perusahan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="px-5 py-7 block hover:text-secondary text-gray-700" href="/src/blog.html">Blog</a></li>
+                <li><a class="px-5 py-7 block hover:text-secondary text-gray-700" href="/src/contact.html">Hubungi
+                        Kami</a>
+                </li>
+            </ul>
+            <div class="block lg:hidden">
+                <div class="py-7">
+                    <button class="toggle-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <ul class="hidden *:border-t mobile-menu w-full ">
+            <li><a class="py-5 px-5 block text-gray-700" href="">Beranda</a></li>
+            <li>
+                <button class="py-5 px-5 text-gray-700 flex items-center dropdown-btn">Services
+                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4"></path>
+                    </svg>
+                </button>
+                <ul class="hidden w-full *:border-t mx-4 dropdown-menu">
+                    <li><a class="py-5 px-5 block text-gray-700" href="">Visi dan Misi</a></li>
+                    <li><a class="py-5 px-5 block text-gray-700" href="">Profil</a></li>
+                </ul>
+            </li>
+            <li>
+                <button class="py-5 px-5 text-gray-700 flex items-center dropdown-btn">Portfolio
+                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4"></path>
+                    </svg>
+                </button>
+                <ul class="hidden w-full *:border-t mx-4 dropdown-menu">
+                    <li><a class="py-5 px-5 block text-gray-700" href="">Visi dan Misi</a></li>
+                    <li><a class="py-5 px-5 block text-gray-700" href="">Profil</a></li>
+                </ul>
+            </li>
+            <li><a class="py-5 px-5 block text-gray-700" href="">Blog</a></li>
+            <li><a class="py-5 px-5 block text-gray-700" href="">Kontak Kami</a></li>
+        </ul>
+    </navbar>
+    <header class="w-full h-screen bg-[url('/src/header.jpg')] bg-cover bg-center bg-no-repeat relative">
+        <div class="bg-[#00214dc4] w-full h-full flex justify-center items-center">
+            <div class="container px-5">
+                <div class="w-full lg:w-3/4 overflow-hidden">
+                    <div class="flex slides transition-transform ease-in-out duration-500">
+                        <div class="slide min-w-full">
+                            <div class="block w-full">
+                                <h1 class="text-5xl font-bold text-white leading-10">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing elit.
+                                </h1>
+                                <p class="text-white mt-5 w-full lg:w-1/2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui
+                                    accusantium iste
+                                    temporibus modi illum optio, assumenda molestias numquam exercitationem maxime id
+                                    voluptas.
+                                    Modi
+                                    hic possimus veniam! Sunt aperiam doloribus sequi
+                                </p>
+                                <div class="mt-5 flex">
+                                    <a href="" class="px-10 py-3 text-white bg-secondary rounded">About</a>
+                                    <a href="" class="px-10 py-3 text-white border rounded ml-3">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide min-w-full">
+                            <div class="block w-full">
+                                <h1 class="text-5xl font-bold text-white leading-10">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing 669.
+                                </h1>
+                                <p class="text-white mt-5 w-full lg:w-1/2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui
+                                    accusantium iste
+                                    temporibus modi illum optio, assumenda molestias numquam exercitationem maxime id
+                                    voluptas.
+                                    Modi
+                                    hic possimus veniam! Sunt aperiam doloribus sequi
+                                </p>
+                                <div class="mt-5 flex">
+                                    <a href="" class="px-10 py-3 text-white bg-secondary rounded">About</a>
+                                    <a href="" class="px-10 py-3 text-white border rounded ml-3">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide min-w-full">
+                            <div class="block w-full">
+                                <h1 class="text-5xl font-bold text-white leading-10">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing 110.
+                                </h1>
+                                <p class="text-white mt-5 w-full lg:w-1/2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui
+                                    accusantium iste
+                                    temporibus modi illum optio, assumenda molestias numquam exercitationem maxime id
+                                    voluptas.
+                                    Modi
+                                    hic possimus veniam! Sunt aperiam doloribus sequi
+                                </p>
+                                <div class="mt-5 flex">
+                                    <a href="" class="px-10 py-3 text-white bg-secondary rounded">About</a>
+                                    <a href="" class="px-10 py-3 text-white border rounded ml-3">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="hidden lg:block text-3xl text-white absolute top-1/2 right-20 p-5"
+                onclick="nextSlide()">&#10095;</button>
+            <div class="absolute bottom-10">
+                <button onclick="currentSlide(0)" class="dot"></button>
+                <button onclick="currentSlide(1)" class="dot"></button>
+                <button onclick="currentSlide(2)" class="dot"></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="h-64"></div>
+    <div class="h-64"></div>
+    <div class="h-64"></div>
+    <div class="h-64"></div>
+    <div class="h-64"></div>
+    <div class="h-64"></div>
+    <div class="h-64"></div>
+
+    <script>
+        document.querySelector('.toggle-button').addEventListener('click', function () {
+            document.querySelector('.mobile-menu').classList.toggle('hidden')
+        })
+
+        document.querySelectorAll('.dropdown-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                btn.parentElement.querySelector('.dropdown-menu').classList.toggle('hidden')
+            })
+        })
+
+        // slider
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            if (index >= slide.length) currentIndex = 0;
+            if (index < 0) currentIndex = slide.length - 1;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentIndex].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentIndex++;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex--;
+            showSlide(currentIndex);
+        }
+
+        function currentSlide(index) {
+            currentIndex = index;
+            showSlide(currentIndex);
+        }
+
+        showSlide(currentIndex);
+        setInterval(nextSlide, 5000); 
+    </script>
+</body>
+
+</html>

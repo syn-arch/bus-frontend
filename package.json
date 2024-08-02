@@ -15,6 +15,7 @@
     "tailwindcss": "^3.4.7"
   },
   "dependencies": {
+    "countup.js": "^2.8.0",
     "tailwind-not-last-child": "^2.0.1"
   }
 }

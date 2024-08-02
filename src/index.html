@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PT. Buana Utama Sakti</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/owl/assets/owl.theme.default.min.css">
     <style>
         .dot {
             height: 15px;
@@ -18,7 +20,7 @@
             transition: background-color 0.6s ease;
         }
 
-        .active,
+        .dot-active,
         .dot:hover {
             background-color: #717171;
         }
@@ -26,7 +28,7 @@
 </head>
 
 <body>
-    <navbar
+    <nav
         class="bg-white fixed w-full flex justify-center items-center lg:flex-row flex-col border-b-4 border-secondary z-10">
         <div class="container flex justify-between px-5 w-full">
             <div class="h-full flex items-center py-7">
@@ -46,7 +48,7 @@
                         </svg>
                     </button>
                     <div
-                        class="opacity-0 bg-white invisible border-t-4 border-secondary transition group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
+                        class="opacity-0 bg-white invisible border-t-4 border-secondary group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
                         <div class="shadow p-5 pb-10 flex justify-center">
                             <div class="container grid grid-cols-3 py-5">
                                 <div>
@@ -70,7 +72,7 @@
                         </svg>
                     </button>
                     <div
-                        class="opacity-0 invisible border-t-4 border-secondary bg-white transition group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
+                        class="opacity-0 invisible border-t-4 border-secondary bg-white group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
                         <div class="shadow p-5 pb-10 flex justify-center">
                             <div class="container grid grid-cols-3 py-5">
                                 <div>
@@ -94,7 +96,7 @@
                         </svg>
                     </button>
                     <div
-                        class="opacity-0 invisible border-t-4 border-secondary bg-white transition group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
+                        class="opacity-0 invisible border-t-4 border-secondary bg-white group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
                         <div class="shadow p-5 pb-10 flex justify-center">
                             <div class="container grid grid-cols-3 py-5">
                                 <div>
@@ -118,7 +120,7 @@
                         </svg>
                     </button>
                     <div
-                        class="opacity-0 invisible border-t-4 border-secondary bg-white transition group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
+                        class="opacity-0 invisible border-t-4 border-secondary bg-white group-hover:opacity-100 group-hover:visible fixed left-0 right-0 top-[5rem] min-w-screen z-10">
                         <div class="shadow p-5 pb-10 flex justify-center">
                             <div class="container grid grid-cols-3 py-5">
                                 <div>
@@ -141,7 +143,7 @@
                 <div class="py-7">
                     <button class="toggle-button">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44"
-                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000" fill="none"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M4 6l16 0" />
@@ -183,18 +185,18 @@
             <li><a class="py-5 px-5 block text-gray-700" href="">Blog</a></li>
             <li><a class="py-5 px-5 block text-gray-700" href="">Kontak Kami</a></li>
         </ul>
-    </navbar>
+    </nav>
     <header class="w-full h-screen bg-[url('/src/header.jpg')] bg-cover bg-center bg-no-repeat relative">
-        <div class="bg-[#00214dc4] w-full h-full flex justify-center items-center">
+        <div class="bg-primarylight w-full h-full flex justify-center items-center">
             <div class="container px-5">
                 <div class="w-full lg:w-3/4 overflow-hidden">
-                    <div class="flex slides transition-transform ease-in-out duration-500">
-                        <div class="slide min-w-full">
+                    <div class="flex slidez transition-transform ease-in-out duration-500">
+                        <div class="zlide min-w-full">
                             <div class="block w-full">
-                                <h1 class="text-5xl font-bold text-white leading-10">Lorem ipsum dolor sit amet
+                                <p class="text-5xl font-bold text-white leading-10">Lorem ipsum dolor sit amet
                                     consectetur
                                     adipisicing elit.
-                                </h1>
+                                </p>
                                 <p class="text-white mt-5 w-full lg:w-1/2">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui
                                     accusantium iste
@@ -209,12 +211,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slide min-w-full">
+                        <div class="zlide min-w-full">
                             <div class="block w-full">
-                                <h1 class="text-5xl font-bold text-white leading-10">Lorem ipsum dolor sit amet
+                                <p class="text-5xl font-bold text-white leading-10">Lorem ipsum dolor sit amet
                                     consectetur
                                     adipisicing 669.
-                                </h1>
+                                </p>
                                 <p class="text-white mt-5 w-full lg:w-1/2">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui
                                     accusantium iste
@@ -229,12 +231,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slide min-w-full">
+                        <div class="zlide min-w-full">
                             <div class="block w-full">
-                                <h1 class="text-5xl font-bold text-white leading-10">Lorem ipsum dolor sit amet
+                                <p class="text-5xl font-bold text-white leading-10">Lorem ipsum dolor sit amet
                                     consectetur
                                     adipisicing 110.
-                                </h1>
+                                </p>
                                 <p class="text-white mt-5 w-full lg:w-1/2">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui
                                     accusantium iste
@@ -259,40 +261,633 @@
                 <button onclick="currentSlide(1)" class="dot"></button>
                 <button onclick="currentSlide(2)" class="dot"></button>
             </div>
+            <div class="absolute bottom-10 flex justify-center w-full">
+                <div class="container flex *:mr-10">
+                    <a href="">
+                        <svg xmlns=" http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            <path d="M16.5 7.5l0 .01" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
+                            width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                            <path d="M10 9l5 3l-5 3z" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="25"
+                            height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                            <path d="M3 7l9 6l9 -6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
+    <main>
+        <div class="bg-[url('/src/cs.jpg')] bg-cover bg-bottom bg-no-repeat">
+            <div class="bg-[rgba(255,255,255,0.9)]">
+                <div class="container mx-auto py-10 px-10 md:px-0 flex justify-between flex-col md:flex-row">
+                    <div class="w-full md:w-1/2 text-primary">
+                        <p class="text-3xl font-bold">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto hic possimus
+                            tenetur cum,
+                            exercitationem nostrum at aliquid cupiditate perferendis vero repellat recusandae.</p>
+                    </div>
+                    <div class="flex items-center mt-5 md:p-0">
+                        <a href=""
+                            class="border border-extrafont-extrabold py-3 px-5 text-black group hover:text-white hover:bg-primary hover:stroke-black flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-whatsapp mr-3 stroke-black group-hover:stroke-white"
+                                width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                                <path
+                                    d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                            </svg>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 container mx-auto">
+            <div class="w-full text-center">
+                <span class="text-3xl font-bold text-primary border-b-4 border-secondary pb-3">Our Services</span>
+                <p class="mt-10 w-full md:w-1/2 text-center mx-auto px-5 md:px-0">Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Consequuntur at alias nulla accusantium
+                    suscipit sunt nobis nemo consequatur dignissimos omnis!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-10 p-10 md:p-0">
+                <div>
+                    <img src="/src/s1.png" alt="" class="w-full">
+                </div>
+                <div>
+                    <p class="font-bold text-xl text-primary">Engineering</p>
+                    <p class="mt-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis reprehenderit
+                        vitae. Amet, deserunt recusandae? Modi quo ratione repellendus obcaecati suscipit, voluptatibus
+                        quaerat nesciunt nostrum repudiandae inventore assumenda, accusamus praesentium omnis eius, quas
+                        at deleniti nihil officia.
+                    </p>
+                    <ul class="mt-5">
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                    </ul>
+                    <div class="mt-5 flex">
+                        <a href="" class="bg-secondary text-white py-3 px-7 rounded flex items-center">
+                            Selengkapnya
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-arrow-big-right ml-2" width="30" height="30"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 md:mt-10 gap-10 p-10 md:p-0">
+                <div class="order-1 md:order-2">
+                    <img src="/src/s2.png" alt="" class="w-full">
+                </div>
+                <div class="order-2 md:order-1">
+                    <p class="font-bold text-xl text-primary">Engineering</p>
+                    <p class="mt-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perferendis reprehenderit
+                        vitae. Amet, deserunt recusandae? Modi quo ratione repellendus obcaecati suscipit, voluptatibus
+                        quaerat nesciunt nostrum repudiandae inventore assumenda, accusamus praesentium omnis eius, quas
+                        at deleniti nihil officia.
+                    </p>
+                    <ul class="mt-5">
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                        <li class="flex items-center mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-square-rounded-check mr-3" width="40" height="40"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00224D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 12l2 2l4 -4" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                            </svg>
+                            <span class="text-lg">Lorem ipsum dolor sit amet consectetur
+                                adipisicing.</span>
+                        </li>
+                    </ul>
+                    <div class="mt-5 flex">
+                        <a href="" class="bg-secondary text-white py-3 px-7 rounded flex items-center">
+                            Selengkapnya
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-arrow-big-right ml-2" width="30" height="30"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 bg-gray-100 py-10">
+            <div class="container mx-auto">
+                <div class="w-full text-center">
+                    <span class="text-3xl font-bold text-primary border-b-4 border-secondary pb-3">Our Projects</span>
+                    <p class="mt-10 w-full md:w-1/2 text-center mx-auto px-5 md:px-0">Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Consequuntur at alias nulla accusantium
+                        suscipit sunt nobis nemo consequatur dignissimos omnis!</p>
+                </div>
+                <div class="owl-carousel owl-theme bus-carousel">
+                    <div class="w-full mt-5 p-10">
+                        <img src="p1.jpg" alt="" class="w-full h-80 md:h-96 object-cover">
+                        <h3 class="mt-5 text-xl text-primary font-bold">Power Plant Main Control System</h3>
+                        <p class="w-full md:w-3/4 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Delectus sint
+                            laborum
+                            ipsa
+                            totam,
+                            tempore, ea fugiat commodi ex facere architecto odit repellendus, laudantium quisquam porro.
+                            Maiores et officia alias dolor earum, porro at similique autem fuga pariatur nemo expedita
+                            sit!
+                        </p>
 
-    <div class="h-64"></div>
-    <div class="h-64"></div>
-    <div class="h-64"></div>
-    <div class="h-64"></div>
-    <div class="h-64"></div>
-    <div class="h-64"></div>
-    <div class="h-64"></div>
+                        <div class="flex mt-5 items-center">
+                            <div>
+                                <span class="text-xl text-primary font-bold">Client</span>
+                                <p>PT. Surya Abadi</p>
+                            </div>
+                            <div class="ml-10">
+                                <img src="plogo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full mt-5 p-10">
+                        <img src="p2.jpg" alt="" class="w-full h-80 md:h-96 object-cover">
+                        <h3 class="mt-5 text-xl text-primary font-bold">Power Plant Main Control System</h3>
+                        <p class="w-full md:w-3/4 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Delectus sint
+                            laborum
+                            ipsa
+                            totam,
+                            tempore, ea fugiat commodi ex facere architecto odit repellendus, laudantium quisquam porro.
+                            Maiores et officia alias dolor earum, porro at similique autem fuga pariatur nemo expedita
+                            sit!
+                        </p>
 
+                        <div class="flex mt-5 items-center">
+                            <div>
+                                <span class="text-xl text-primary font-bold">Client</span>
+                                <p>PT. Surya Abadi</p>
+                            </div>
+                            <div class="ml-10">
+                                <img src="plogo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full mt-5 p-10">
+                        <img src="p3.jpg" alt="" class="w-full h-80 md:h-96 object-cover">
+                        <h3 class="mt-5 text-xl text-primary font-bold">Power Plant Main Control System</h3>
+                        <p class="w-full md:w-3/4 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Delectus sint
+                            laborum
+                            ipsa
+                            totam,
+                            tempore, ea fugiat commodi ex facere architecto odit repellendus, laudantium quisquam porro.
+                            Maiores et officia alias dolor earum, porro at similique autem fuga pariatur nemo expedita
+                            sit!
+                        </p>
+
+                        <div class="flex mt-5 items-center">
+                            <div>
+                                <span class="text-xl text-primary font-bold">Client</span>
+                                <p>PT. Surya Abadi</p>
+                            </div>
+                            <div class="ml-10">
+                                <img src="plogo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 container mx-auto">
+            <div class="w-full text-center">
+                <span class="text-3xl font-bold text-primary border-b-4 border-secondary pb-3">Products</span>
+                <p class="mt-10 w-full md:w-1/2 text-center mx-auto px-5 md:px-0">Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Consequuntur at alias nulla accusantium
+                    suscipit sunt nobis nemo consequatur dignissimos omnis!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 p-10 md:p-0">
+                <div class="bg-white shadow-xl">
+                    <a href="">
+                        <img src="r1.png" alt="" class="w-full h-96 object-cover">
+                        <div class="p-5">
+                            <h3 class="text-xl text-primary font-bold">Product Name</h3>
+                            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores neque
+                                reprehenderit culpa?
+                                Quam et officia pariatur similique.</p>
+                            <span href="" class="text-secondary mt-3 block">Selengkapnya<span />
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white shadow-xl">
+                    <a href="">
+                        <img src="r1.png" alt="" class="w-full h-96 object-cover">
+                        <div class="p-5">
+                            <h3 class="text-xl text-primary font-bold">Product Name</h3>
+                            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores neque
+                                reprehenderit culpa?
+                                Quam et officia pariatur similique.</p>
+                            <span href="" class="text-secondary mt-3 block">Selengkapnya<span />
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white shadow-xl">
+                    <a href="">
+                        <img src="r1.png" alt="" class="w-full h-96 object-cover">
+                        <div class="p-5">
+                            <h3 class="text-xl text-primary font-bold">Product Name</h3>
+                            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores neque
+                                reprehenderit culpa?
+                                Quam et officia pariatur similique.</p>
+                            <span href="" class="text-secondary mt-3 block">Selengkapnya<span />
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white shadow-xl">
+                    <a href="">
+                        <img src="r1.png" alt="" class="w-full h-96 object-cover">
+                        <div class="p-5">
+                            <h3 class="text-xl text-primary font-bold">Product Name</h3>
+                            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores neque
+                                reprehenderit culpa?
+                                Quam et officia pariatur similique.</p>
+                            <span href="" class="text-secondary mt-3 block">Selengkapnya<span />
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white shadow-xl">
+                    <a href="">
+                        <img src="r1.png" alt="" class="w-full h-96 object-cover">
+                        <div class="p-5">
+                            <h3 class="text-xl text-primary font-bold">Product Name</h3>
+                            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores neque
+                                reprehenderit culpa?
+                                Quam et officia pariatur similique.</p>
+                            <span href="" class="text-secondary mt-3 block">Selengkapnya<span />
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white shadow-xl">
+                    <a href="">
+                        <img src="r1.png" alt="" class="w-full h-96 object-cover">
+                        <div class="p-5">
+                            <h3 class="text-xl text-primary font-bold">Product Name</h3>
+                            <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores neque
+                                reprehenderit culpa?
+                                Quam et officia pariatur similique.</p>
+                            <span href="" class="text-secondary mt-3 block">Selengkapnya<span />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary mt-10 py-10">
+            <div class="container mx-auto grid grid-cols-1 justify-center md:grid-cols-3 text-white px-10">
+                <div class="mt-5 border-b md:border-b-0 md:border-r pb-5 pl-5">
+                    <span class="text-3xl font-semibold">Client</span>
+                    <p class="text-7xl font-extrabold" id="count-client" data-value="150">0</p>
+                </div>
+                <div class="mt-5 border-b md:border-b-0 md:border-r pb-5 pl-5">
+                    <span class="text-3xl font-semibold">Partner</span>
+                    <p class="text-7xl font-extrabold" id="count-partner" data-value="350">0</p>
+                </div>
+                <div class="mt-5 pl-5">
+                    <span class="text-3xl font-semibold">Project</span>
+                    <p class="text-7xl font-extrabold" id="count-project" data-value="500">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 container mx-auto">
+            <div class="w-full text-center">
+                <span class="text-3xl font-bold text-primary border-b-4 border-secondary pb-3">What They Say?</span>
+                <p class="mt-10 w-full md:w-1/2 text-center mx-auto px-5 md:px-0">Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Consequuntur at alias nulla accusantium
+                    suscipit sunt nobis nemo consequatur dignissimos omnis!</p>
+            </div>
+            <div class="w-3/4 mx-auto mt-10 border p-10 bus-carousel owl-carousel owl-theme" style="width: 75%;">
+                <div class=" flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/4 flex justify-center items-center">
+                        <img src="t1.png" alt="" class="w-1/2 md:w-full">
+                    </div>
+                    <div class="w-full mt-5 md:w-3/4 pl-0 md:pl-10 ">
+                        <p class="text-2xl font-bold italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reiciendis
+                            quos, ut necessitatibus
+                            voluptatibus quae dignissimos dolores cum eum sint ipsam"</p>
+                        <p class="mt-5 border-l-4 border-secondary pl-5">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Non aliquam ipsa deleniti
+                            sint asperiores adipisci, dignissimos a eius at debitis et ex possimus reprehenderit facere
+                            atque minima doloremque alias rem dicta exercitationem similique nihil magni veritatis
+                            excepturi. Natus, expedita. Suscipit?</p>
+                        <p class="mt-5 text-lg text-gray-600">I.r Jhon Doe</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/4 flex justify-center items-center">
+                        <img src="t1.png" alt="" class="w-1/2 md:w-full">
+                    </div>
+                    <div class="w-full mt-5 md:w-3/4 pl-0 md:pl-10 ">
+                        <p class="text-2xl font-bold italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reiciendis
+                            quos, ut necessitatibus
+                            voluptatibus quae dignissimos dolores cum eum sint ipsam"</p>
+                        <p class="mt-5 border-l-4 border-secondary pl-5">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Non aliquam ipsa deleniti
+                            sint asperiores adipisci, dignissimos a eius at debitis et ex possimus reprehenderit facere
+                            atque minima doloremque alias rem dicta exercitationem similique nihil magni veritatis
+                            excepturi. Natus, expedita. Suscipit?</p>
+                        <p class="mt-5 text-lg text-gray-600">I.r Jhon Doe</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/4 flex justify-center items-center">
+                        <img src="t1.png" alt="" class="w-1/2 md:w-full">
+                    </div>
+                    <div class="w-full mt-5 md:w-3/4 pl-0 md:pl-10 ">
+                        <p class="text-2xl font-bold italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reiciendis
+                            quos, ut necessitatibus
+                            voluptatibus quae dignissimos dolores cum eum sint ipsam"</p>
+                        <p class="mt-5 border-l-4 border-secondary pl-5">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing
+                            elit. Non aliquam ipsa deleniti
+                            sint asperiores adipisci, dignissimos a eius at debitis et ex possimus reprehenderit facere
+                            atque minima doloremque alias rem dicta exercitationem similique nihil magni veritatis
+                            excepturi. Natus, expedita. Suscipit?</p>
+                        <p class="mt-5 text-lg text-gray-600">I.r Jhon Doe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 flex container mx-auto items-center justify-center">
+            <div class="mr-10">
+                <img src="logo1.png" alt="" class="w-40">
+            </div>
+            <div class="mr-10">
+                <img src="logo2.png" alt="" class="w-40">
+            </div>
+            <div class="mr-10">
+                <img src="logo3.png" alt="" class="w-40">
+            </div>
+            <div class="mr-10">
+                <img src="logo4.png" alt="" class="w-40">
+            </div>
+            <div class="mr-10">
+                <img src="logo5.png" alt="" class="w-40">
+            </div>
+            <div class="mr-10">
+                <img src="logo6.png" alt="" class="w-40">
+            </div>
+        </div>
+    </main>
+    <footer class="bg-primaryDark mt-10">
+        <div class="grid py-10 container mx-auto grid-cols-12 gap-5 text-white">
+            <div class="col-span-4">
+                <img src="logo white.png" alt="" class="w-full">
+                <p class="mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt numquam facilis nihil
+                    delectus!
+                    Quam tempora, nesciunt molestias totam incidunt nihil quas, voluptatem animi quasi eos officia
+                    mollitia, dignissimos eius culpa!</p>
+            </div>
+            <div class="col-span-1"></div>
+            <div class="col-span-2">
+                <p class="font-bold text-lg">Links</p>
+                <ul class="*:mt-3">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Produk</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-span-2">
+                <p class="font-bold text-lg">Services</p>
+                <ul class="*:mt-3">
+                    <li><a href="">Engineering</a></li>
+                    <li><a href="">Service</a></li>
+                </ul>
+            </div>
+            <div class="col-span-3">
+                <p class="font-bold text-lg">Contact Us</p>
+                <ul class="*:mt-3">
+                    <li><a href="">Telp : (022) 7632 222 2311</a></li>
+                    <li><a href="">Email : company@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-primaryDarker text-white py-5">
+            <div class="container mx-auto flex justify-between">
+                <div>
+                    <p>copyright &copy; 2024 all right reserved</p>
+                </div>
+                <div>
+                    <div class="container flex *:mr-10">
+                        <a href="">
+                            <svg xmlns=" http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                                width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                                width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16.5 7.5l0 .01" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
+                                width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                                <path d="M10 9l5 3l-5 3z" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="25"
+                                height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                                <path d="M3 7l9 6l9 -6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/owl/owl.carousel.min.js"></script>
+    <script src="countup.js" type="module"></script>
     <script>
-        document.querySelector('.toggle-button').addEventListener('click', function () {
-            document.querySelector('.mobile-menu').classList.toggle('hidden')
-        })
-
-        document.querySelectorAll('.dropdown-btn').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                btn.parentElement.querySelector('.dropdown-menu').classList.toggle('hidden')
-            })
-        })
-
         // slider
-        const slides = document.querySelector('.slides');
-        const slide = document.querySelectorAll('.slide');
+        const slidez = document.querySelector('.slidez');
+        const slide = document.querySelectorAll('.zlide');
         const dots = document.querySelectorAll('.dot');
         let currentIndex = 0;
 
         function showSlide(index) {
             if (index >= slide.length) currentIndex = 0;
             if (index < 0) currentIndex = slide.length - 1;
-            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[currentIndex].classList.add('active');
+            slidez.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('dot-active'));
+            dots[currentIndex].classList.add('dot-active');
         }
 
         function nextSlide() {
@@ -311,7 +906,28 @@
         }
 
         showSlide(currentIndex);
-        setInterval(nextSlide, 5000); 
+        setInterval(nextSlide, 5000);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // mobile menu
+            document.querySelector('.toggle-button').addEventListener('click', function () {
+                document.querySelector('.mobile-menu').classList.toggle('hidden')
+            })
+
+            document.querySelectorAll('.dropdown-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    btn.parentElement.querySelector('.dropdown-menu').classList.toggle('hidden')
+                });
+            });
+
+            // owl carousel
+            $('.bus-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 10000
+            })
+        });
     </script>
 </body>
 

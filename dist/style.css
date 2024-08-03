@@ -23,7 +23,7 @@
   position: absolute;
   bottom: -10px;
   left: 0;
-  width: 200%;
+  width: 100%;
   height: 4px;
   background: linear-gradient(to right, #ff204e 50%, white 50%);
 }
